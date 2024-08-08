@@ -10,6 +10,15 @@ export class VisualViewport extends HTMLElement {
     }
 
     css = `
+        .visually-hidden:not(:focus):not(:active):not(:focus-within) {
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
         :host {
             --color-foreground: black;
             --color-background: white;
@@ -233,15 +242,33 @@ export class VisualViewport extends HTMLElement {
                     <header>
                         <h2>Visual Viewport</h2>
                         <div>
-                            <button data-position="top-left"><!--<span>↖</span>--></button>
-                            <button data-position="top-center"><!--<span>↑</span>--></button>
-                            <button data-position="top-right"><!--<span>↗</span>--></button>
-                            <button data-position="center-left"><!--<span>←</span>--></button>
-                            <button data-position="center-center"><!--<span>⊙</span>--></button>
-                            <button data-position="center-right"><!--<span>→</span>--></button>
-                            <button data-position="bottom-left"><!--<span>↙</span>--></button>
-                            <button data-position="bottom-center"><!--<span>↓</span>--></button>
-                            <button data-position="bottom-right"><!--<span>↘</span>--></button>
+                            <button type="button" data-position="top-left">
+                                <span class="visually-hidden">Top Left</span>
+                            </button>
+                            <button type="button" data-position="top-center">
+                                <span class="visually-hidden">Top Center</span>
+                            </button>
+                            <button type="button" data-position="top-right">
+                                <span class="visually-hidden">Top Right</span>
+                            </button>
+                            <button type="button" data-position="center-left">
+                                <span class="visually-hidden">Center Left</span>
+                            </button>
+                            <button type="button" data-position="center-center">
+                                <span class="visually-hidden">Center Center</span>
+                            </button>
+                            <button type="button" data-position="center-right">
+                                <span class="visually-hidden">Center Right</span>
+                            </button>
+                            <button type="button" data-position="bottom-left">
+                                <span class="visually-hidden">Bottom Left</span>
+                            </button>
+                            <button type="button" data-position="bottom-center">
+                                <span class="visually-hidden">Bottom Center</span>
+                            </button>
+                            <button type="button" data-position="bottom-right">
+                                <span class="visually-hidden">Bottom Right</span>
+                            </button>
                         </div>
                     </header>
                     <section>

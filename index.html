@@ -12,51 +12,15 @@
                 background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
             }
 
-            html, body {
+            html {
                 min-height: 100%;
             }
 
             body {
                 margin: 0;
+                min-height: 200dvh;
             }
         </style>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", (event) => {
-                // function touchStart() {
-                //     document.documentElement.style.setProperty("background-color", 'whitesmoke');
-                // }
-
-                // function touchEnd() {
-                //     document.documentElement.style.setProperty("background-color", '');
-                // }
-
-                // function update() {
-                //     document.querySelector('p').innerHTML = visualViewport.scale.toFixed(2);
-
-                //     const properties = [
-                //         'offsetLeft',
-                //         'offsetTop',
-                //         'pageLeft',
-                //         'pageTop',
-                //         'width',
-                //         'height',
-                //         'scale'
-                //     ]
-
-                //     properties.forEach(property => {
-                //         document.documentElement.style.setProperty(`--${property}`, visualViewport[property]);
-                //     });
-                // }
-
-                // update();
-
-                // document.addEventListener("touchstart", touchStart);
-                // document.addEventListener("touchend", touchEnd);
-                // visualViewport.addEventListener('resize', update);
-                // visualViewport.addEventListener('scroll', update);
-            });
-        </script>
 
         <script type="module">
             import('./visual-viewport.js').then((mod) => {
@@ -65,6 +29,6 @@
         </script>
     </head>
     <body>
-        <visual-viewport></visual-viewport>
+        <visual-viewport data-position="center-center"></visual-viewport>
     </body>
 </html>

@@ -4,21 +4,32 @@
 
         <style>
             html {
-                --color: navy;
-                --bg-color: color-mix(in oklch, var(--color) 7%, transparent 100%);
+                color-scheme: light dark;
+                --color: light-dark(navy, white);
+                --bg-color: color-mix(in srgb, var(--color) 7%, transparent 100%);
 
+                background-color: light-dark(transparent, black);
                 background-image: linear-gradient(var(--bg-color) 2px, transparent 2px), linear-gradient(90deg, var(--bg-color) 2px, transparent 2px), linear-gradient(var(--bg-color) 1px, transparent 1px), linear-gradient(90deg, var(--bg-color) 1px, transparent 1px);
                 background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
                 background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-            }
-
-            html {
                 min-height: 100%;
             }
 
             body {
                 margin: 0;
-                min-height: 200dvh;
+                display: grid;
+                place-items: center;
+
+                > button {
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                }
+
+                &:has(:popover-open) {
+                    > button {
+                        display: none;
+                    }
+                }
             }
         </style>
 
@@ -29,6 +40,7 @@
         </script>
     </head>
     <body>
-        <visual-viewport data-position="center-center"></visual-viewport>
+        <button popovertarget="visual-viewport" popovertargetaction="show">Open Visual Viewport Tracker</button>
+        <visual-viewport data-position="center-center" popover="manual" id="visual-viewport"></visual-viewport>
     </body>
 </html>

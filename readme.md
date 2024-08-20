@@ -14,7 +14,7 @@ Throw this standalone web component on a page for an overlay that logs the curre
         });
     </script>
 
-    <button popovertarget="visual-viewport" popovertargetaction="show">Open Visual Viewport Tracker</button>
+    <button popovertarget="visual-viewport" popovertargetaction="show">Open Visual Viewport Debugger</button>
 
     <visual-viewport data-position="center-center" popover="manual" id="visual-viewport"></visual-viewport>
 ```

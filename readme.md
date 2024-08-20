@@ -2,10 +2,6 @@
 
 Throw this standalone web component on a page for an overlay that logs the current visual viewport values. It always remains the same size and stays in the same position when scaling and panning;
 
-The easiest way I can think of solving this is using the tables included in GitHub's flavored markdown.
-
-To your specific example it would look something like this:
-
 <img src="https://github.com/jbasoo/visual-viewport/blob/main/visual-viewport-debugger-light.jpg" alt="Light mode screenshot of the component" width="320" height="320"> <img src="https://github.com/jbasoo/visual-viewport/blob/main/visual-viewport-debugger-dark.jpg" alt="Dark mode screenshot of the component" width="320" height="320">
 
 

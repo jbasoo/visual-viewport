@@ -1,6 +1,6 @@
 # Visual Viewport Debugger
 
-Throw this standalone web component on a page for an overlay that logs the current visual viewport values (offsetLeft, offsetTop, pageLeft, pageTop, width, height, scale). It always remains the same size and stays in the same position when scaling and panning.
+Throw this standalone web component on a page for an overlay that logs the current [visual viewport](https://developer.mozilla.org/en-US/docs/Web/API/Visual_Viewport_API) values (offsetLeft, offsetTop, pageLeft, pageTop, width, height, scale). It always remains the same size and stays in the same position when scaling and panning.
 
 <img src="https://github.com/jbasoo/visual-viewport/blob/main/visual-viewport-debugger-light.jpg" alt="Light mode screenshot of the component" width="320" height="320"> <img src="https://github.com/jbasoo/visual-viewport/blob/main/visual-viewport-debugger-dark.jpg" alt="Dark mode screenshot of the component" width="320" height="320">
 

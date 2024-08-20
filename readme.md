@@ -6,7 +6,8 @@ The easiest way I can think of solving this is using the tables included in GitH
 
 To your specific example it would look something like this:
 
-![Light mode screenshot of the component](./visual-viewport-debugger-light.jpg =320x320) ![Dark mode screenshot of the component](./visual-viewport-debugger-dark.jpg =320x320)
+<img src="https://github.com/jbasoo/visual-viewport/blob/main/visual-viewport-debugger-light.jpg" alt="Light mode screenshot of the component" width="320" height="320">
+<img src="https://github.com/jbasoo/visual-viewport/blob/main/visual-viewport-debugger-dark.jpg" alt="Dark mode screenshot of the component" width="320" height="320">
 
 
 ## Usage
